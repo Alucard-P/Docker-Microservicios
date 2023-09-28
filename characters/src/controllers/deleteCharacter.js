@@ -8,7 +8,5 @@ module.exports = async (req, res) => {
   if (existId) {
     const data = await character.delete(id);
     response(res, 201, data);
-  } else {
-    throw new ClientError("No existe el id", 404);
-  }
+  } else throw new ClientError("No existe el id", 404);
 };

@@ -1,7 +1,7 @@
 // const characters = require("./characters.json");
 const axios = require("axios");
-// const url = "http://database:8004/Character";
-const url = "http://localhost:8004/Character";
+const url = "http://database:8004/Character";
+// const url = "http://localhost:8004/Character";
 
 module.exports = {
   list: async () => {

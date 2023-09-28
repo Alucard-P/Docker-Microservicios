@@ -8,7 +8,5 @@ module.exports = async (req, res) => {
   if (!existId) {
     const newCharacter = await character.create(req.body);
     response(res, 201, newCharacter);
-  } else {
-    throw new ClientError("Ya existe este id, escriba otro", 404);
-  }
+  } else throw new ClientError("Ya existe este id, escriba otro", 404);
 };

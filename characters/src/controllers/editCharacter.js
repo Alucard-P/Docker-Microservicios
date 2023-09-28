@@ -8,7 +8,5 @@ module.exports = async (req, res) => {
   if (existId) {
     const editCharacter = await character.edit(id, req.body);
     response(res, 201, editCharacter);
-  } else {
-    throw new ClientError("No existe el id", 404);
-  }
+  } else throw new ClientError("No existe el id", 404);
 };
