@@ -13,7 +13,7 @@ Además de la funcionalidad principal, este proyecto ha sido contenerizado utili
 # Instrucciones para levantar en local
 
 - Crearse una base de datos en mongoDB.
-- Crear un .env con las variables MONGO_URI dentro de la carpeta database.
+- Crear un .env con las variable MONGO_URI dentro de la carpeta database.
 - Abrir una terminal ubicada en la carpeta Docker-Microservicios.
 - Ejecutar el comando docker-compose build.
 - Ejecutar el comando docker-compose up.
